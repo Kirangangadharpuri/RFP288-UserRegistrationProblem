@@ -69,7 +69,8 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Enter password ");
             string passWord = Console.ReadLine();
-            string Password = "^(?=[a-zA-Z0-9#@$?-_]{8,}$)";
+            string Password ="^[0-9A-Za-z@#$%&!]{8,}$";
+
             if (Regex.IsMatch(passWord, Password))
             {
                 Console.WriteLine("PASSWORD IS VALID");
@@ -79,19 +80,6 @@ namespace UserRegistrationProblem
                 Console.WriteLine("INVALID PASSWORD");
             }
         }
-        public void Valid_SampleTest()
-        {
-            Console.WriteLine("Enetr email id");
-            string emailId= Console.ReadLine();
-            string email = "^[0-9A-Za-z]+[.+_-]{0,1}[0-9A-Za-z]+[@][A-Za-z]+[.][a-z]{2,3}([.][a-z]{2,3}){0,1}$";
-           if (Regex.IsMatch(emailId, email))
-            {
-                Console.WriteLine("email is valid");
-            }
-            else
-            {
-                Console.WriteLine("Email is Invalid");
-            }
-        }
+       
     }
 }
