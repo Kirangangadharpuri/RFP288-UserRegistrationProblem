@@ -69,8 +69,7 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Enter password ");
             string passWord = Console.ReadLine();
-            string Password ="^[0-9A-Za-z@#$%&!]{8,}$";
-
+            string Password = "^[A-Z]{1}[0-9A-Za-z@#$%&!]{8,}$";
             if (Regex.IsMatch(passWord, Password))
             {
                 Console.WriteLine("PASSWORD IS VALID");
