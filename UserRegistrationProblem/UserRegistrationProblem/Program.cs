@@ -14,12 +14,16 @@ namespace UserRegistrationProblem
             {
                 Validation validation = new Validation();
                 Console.WriteLine("1- VALIDATE FIRST NAME");
+                Console.WriteLine("2- VALIDATE LAST NAME");
                 Console.WriteLine("CHOOOSE ANY ABOVE OPTION");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
                     case 1:
                         validation.Valid_FirstName();
+                        break;
+                    case 2:
+                        validation.Valid_LastName(); 
                         break;
                 }
             }
