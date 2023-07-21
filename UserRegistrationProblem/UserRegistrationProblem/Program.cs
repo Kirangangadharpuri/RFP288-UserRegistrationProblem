@@ -15,6 +15,7 @@ namespace UserRegistrationProblem
                 Validation validation = new Validation();
                 Console.WriteLine("1- VALIDATE FIRST NAME");
                 Console.WriteLine("2- VALIDATE LAST NAME");
+                Console.WriteLine("3- VALIDATE EMAIL ID");
                 Console.WriteLine("CHOOOSE ANY ABOVE OPTION");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -24,6 +25,9 @@ namespace UserRegistrationProblem
                         break;
                     case 2:
                         validation.Valid_LastName(); 
+                        break;
+                        case 3:
+                        validation.Valid_Email();
                         break;
                 }
             }

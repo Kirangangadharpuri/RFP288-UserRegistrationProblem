@@ -37,5 +37,19 @@ namespace UserRegistrationProblem
                 Console.WriteLine("INVALID LAST NAME");
             }
         }
+        public void Valid_Email()
+        {
+            Console.WriteLine("Enter email id ");
+            string emailId = Console.ReadLine();
+            string email = "^[A-Za-z0-9]+@[a-z]+[.][a-z]?";
+            if (Regex.IsMatch(emailId, email))
+            {
+                Console.WriteLine("EMAIL ID IS VALID");
+            }
+            else
+            {
+                Console.WriteLine("INVALIDE EMAIL ID NUMBER ");
+            }
+        }
     }
 }
