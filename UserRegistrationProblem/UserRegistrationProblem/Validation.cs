@@ -65,5 +65,19 @@ namespace UserRegistrationProblem
                 Console.WriteLine("INVALID MOBILE NUMBER");
             }
         }
+        public void Valid_Password()
+        {
+            Console.WriteLine("Enter password ");
+            string passWord = Console.ReadLine();
+            string Password = "^(?=[a-zA-Z0-9#@$?-_]{8,}$)";
+            if (Regex.IsMatch(passWord, Password))
+            {
+                Console.WriteLine("PASSWORD IS VALID");
+            }
+            else
+            {
+                Console.WriteLine("INVALID PASSWORD");
+            }
+        }
     }
 }

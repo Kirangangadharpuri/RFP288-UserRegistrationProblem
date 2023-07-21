@@ -17,6 +17,7 @@ namespace UserRegistrationProblem
                 Console.WriteLine("2- VALIDATE LAST NAME");
                 Console.WriteLine("3- VALIDATE EMAIL ID");
                 Console.WriteLine("4-VALIDATE MOBILE NUMBER");
+                Console.WriteLine("5- VALIDATE PASSWORD");
                 Console.WriteLine("CHOOOSE ANY ABOVE OPTION");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -32,6 +33,9 @@ namespace UserRegistrationProblem
                         break;
                         case 4:
                         validation.Valid_MobilNumbere();
+                        break;
+                        case 5:
+                        validation.Valid_Password();
                         break;
                 }
             }
